@@ -9,6 +9,31 @@
 <body>
 	<script>
 		const names = ['jason', 'terry', 'jack'];
+
+		const fullNames = names.map(function (name) {
+			return `${name} Wise`;
+		});
+
+		// Convert to arrow function
+		const fullNames2 = names.map((name) => {
+			return `${name} Wise`;
+		});
+
+		const fullNames3 = names.map(name => {
+			return `${name} Wise`;
+		});
+
+		const fullNames4 = names.map(name => `${name} Wise`);
+
+		const fullNames5 = names.map(() => `cool Wise`);
+
+		const sayMyName = (name) => {
+			console.log(`Hello ${name}`)
+		}
+
+		sayMyName('Jason');
+
+		console.log(fullNames5);
 	</script>
 </body>
 
