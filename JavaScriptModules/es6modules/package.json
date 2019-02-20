@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "webpack --progress --watch"
+    "build": "webpack --progress --watch",
+    "serve": "browser-sync start --directory --server --files '*.js, *.html, *.css'"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015-native-modules": "^6.6.0",
+    "browser-sync": "^2.26.3",
     "webpack": "^2.1.0"
   }
 }

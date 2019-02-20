@@ -1,3 +1,5 @@
+import { apiKey } from './src/config';
+
 const name = 'Jason';
 
-alert(name);
+alert(apiKey);
